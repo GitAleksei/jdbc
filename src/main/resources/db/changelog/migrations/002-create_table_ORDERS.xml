@@ -1,0 +1,22 @@
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.1.xsd">
+
+    <changeSet id="002" author="kiva">
+        <createTable tableName="ORDERS">
+            <column name="id" type="int" autoIncrement="true">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="date" type="timestamp" defaultValueComputed="CURRENT_TIMESTAMP">
+            </column>
+            <column name="customer_id" type="int">
+                <constraints foreignKeyName="fk_address_CUSTOMERS" references="CUSTOMERS(id)"/>
+            </column>
+            <column name="product_name" type="varchar(255)">
+            </column>
+            <column name="amount" type="int">
+            </column>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>
