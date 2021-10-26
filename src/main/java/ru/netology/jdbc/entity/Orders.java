@@ -23,7 +23,7 @@ public class Orders {
     @Temporal(TemporalType.TIMESTAMP)
     private Date date;
 
-    @OneToOne(optional = false)
+    @ManyToOne(optional = false)
     private Customers customers;
 
     @Column(nullable = false)
