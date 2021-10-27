@@ -4,31 +4,31 @@
 http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.1.xsd">
 
     <changeSet id="004" author="kiva">
-        <insert tableName="CUSTOMERS">
+        <insert tableName="customers">
             <column name="name" value="John"/>
             <column name="surname" value="Pet"/>
             <column name="age" value="34"/>
             <column name="phone_number" value="+33432"/>
         </insert>
-        <insert tableName="CUSTOMERS">
+        <insert tableName="customers">
             <column name="name" value="Alexey"/>
             <column name="surname" value="Pet"/>
             <column name="age" value="34"/>
             <column name="phone_number" value="+33432"/>
         </insert>
-        <insert tableName="CUSTOMERS">
+        <insert tableName="customers">
             <column name="name" value="alexey"/>
             <column name="surname" value="Dep"/>
             <column name="age" value="234"/>
             <column name="phone_number" value="+33432"/>
         </insert>
-        <insert tableName="CUSTOMERS">
+        <insert tableName="customers">
             <column name="name" value="Alexey"/>
             <column name="surname" value="Pet"/>
             <column name="age" value="36"/>
             <column name="phone_number" value="+334883232"/>
         </insert>
-        <insert tableName="CUSTOMERS">
+        <insert tableName="customers">
             <column name="name" value="Dave"/>
             <column name="surname" value="Smith"/>
             <column name="age" value="43"/>
