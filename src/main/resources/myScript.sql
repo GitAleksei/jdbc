@@ -1,5 +1,5 @@
-select O.product_name
-from ORDERS O
-join CUSTOMERS C on O.customer_id = C.id
-where lcase(C.name) = :name
-GROUP BY O.product_name;
+select o.productName
+from Orders o
+join o.customers p
+where p.name = :name
+group by o.productName
